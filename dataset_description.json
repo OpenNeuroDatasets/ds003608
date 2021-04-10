@@ -16,5 +16,7 @@
     ],
     "ReferencesAndLinks": [
         "https://doi.org/10.3389/fnhum.2019.00018"
-    ]
+    ],
+    "DatasetDOI": "10.18112/openneuro.ds003608.v1.0.0",
+    "License": "CC0"
 }
