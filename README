@@ -4,7 +4,7 @@ Dataset description: Magnetoencephalography (MEG) dataset on Chinese Character-S
 This MEG dataset was prepared in the Brain Imaging Data Structure (MEG-BIDS, Niso et al. 2018) format using MNE-BIDS (Appelhoff et al. 2019).
 
 In total, we measured MEG data from 19 native Chinese speakers and 18 Finnish speakers. 
-Of those seven were excluded from the Chinese group and five were excluded in the Finnish group for following reasons: four subjects due to poor visual acuity even with magnetically neutral glasses for vision correction, two subjects due to excessive head movements or low head positions in the MEG helmet, one due to technical problems during the recording, and five subjects due to strong noise interference and poor signal quality. 
+Of those seven were excluded from the Chinese group and five were excluded in the Finnish group for the following reasons: four subjects due to poor visual acuity even with magnetically neutral glasses for vision correction, two subjects due to excessive head movements or low head positions in the MEG helmet, one due to technical problems during the recording, and five subjects due to strong noise interference and poor signal quality. 
 The final dataset thus included 12 Chinese participants and 13 Finnish participants.
 
 ## EXPERIMENT
@@ -12,7 +12,7 @@ The final dataset thus included 12 Chinese participants and 13 Finnish participa
 The stimuli consisted of six Chinese characters (Simplified Chinese) and their corresponding flat tone speech sounds (1. 步: bu; 2. 都: du; 3. 谷: gu; 4. 酷: ku; 5. 普: pu; 6. 兔: tu).
 The characters were all common characters familiar to the native Chinese speakers and had the following meanings: 1. steps/walking; 2. both/capital; 3. grain; 4. cool; 5. common; and 6. rabbit. 
 The mean duration of the auditory stimuli was 447.2 ms (SD: 32.7 ms). The duration of the visual stimuli was 1,000 ms. 
-Four kinds of stimuli, auditory only (A), visual only (V), audiovisual congruent (AVC), and audiovisual incongruent (AVI) were presented in random order with 108 trials in each type of the stimuli. 
+Four kinds of stimuli, auditory only (A), visual only (V), audiovisual congruent (AVC), and audiovisual incongruent (AVI) were presented in random order with 108 trials in each type of stimuli. 
 Each trial started with a fixation cross at the center of the screen for 1,000 ms. 
 
 Trigger code:
