@@ -1,6 +1,46 @@
-﻿References
-----------
+=========
+Dataset description: Magnetoencephalography (MEG) dataset on Chinese Character-Sound Integration.
+
+This MEG dataset was prepared in the Brain Imaging Data Structure (MEG-BIDS, Niso et al. 2018) format using MNE-BIDS (Appelhoff et al. 2019).
+
+In total, we measured MEG data from 19 native Chinese speakers and 18 Finnish speakers. 
+Of those seven were excluded from the Chinese group and five were excluded in the Finnish group for following reasons: four subjects due to poor visual acuity even with magnetically neutral glasses for vision correction, two subjects due to excessive head movements or low head positions in the MEG helmet, one due to technical problems during the recording, and five subjects due to strong noise interference and poor signal quality. 
+The final dataset thus included 12 Chinese participants and 13 Finnish participants.
+
+## EXPERIMENT
+
+The stimuli consisted of six Chinese characters (Simplified Chinese) and their corresponding flat tone speech sounds (1. 步: bu; 2. 都: du; 3. 谷: gu; 4. 酷: ku; 5. 普: pu; 6. 兔: tu).
+The characters were all common characters familiar to the native Chinese speakers and had the following meanings: 1. steps/walking; 2. both/capital; 3. grain; 4. cool; 5. common; and 6. rabbit. 
+The mean duration of the auditory stimuli was 447.2 ms (SD: 32.7 ms). The duration of the visual stimuli was 1,000 ms. 
+Four kinds of stimuli, auditory only (A), visual only (V), audiovisual congruent (AVC), and audiovisual incongruent (AVI) were presented in random order with 108 trials in each type of the stimuli. 
+Each trial started with a fixation cross at the center of the screen for 1,000 ms. 
+
+Trigger code:
+A:1
+V:2
+AVC:3
+AVI:4
+
+## MEG
+
+Three anatomical landmarks were used to define the MEG head coordinate system: Nasion, LPA, and RPA.
+
+The position of the HPI coils and the head shape (>100 points evenly distributed over the scalp) were digitized using the Polhemus Isotrak digital tracker system (Polhemus, Colchester, VT, United States).
+
+MEG was recorded using the Elekta Neuromag TRIUX system (Elekta AB, Stockholm, Sweden) at the Centre for Interdisciplinary Brain Research, University of Jyväskylä.
+
+Data were acquired from 306 MEG channels and 2 EOG channels with a sampling rate of 1000 Hz, an online band-pass filter of 0.1-330 Hz, and a 68° upright gantry position.
+
+Maxfilter version 3.0.17 was used for movement compensation using temporal signal-space separation (tSSS).
+
+Bad MEG channels were identified manually and were interpolated by Maxfilter.
+
+## MRI
+
+Individual structural MRIs were not acquired. For source reconstruction, it is recommended to use a template, for example the “fsaverage“ brain from Freesurfer ([https://surfer.nmr.mgh.harvard.edu/](https://surfer.nmr.mgh.harvard.edu/)), and to scale the template head model and source space to the shape and size of the individual participants (as obtained from the head shape points).
+
+## REFERENCES
+
 Appelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., Höchenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A. and Jas, M. (2019). MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis. Journal of Open Source Software 4: (1896). https://doi.org/10.21105/joss.01896
 
 Niso, G., Gorgolewski, K. J., Bock, E., Brooks, T. L., Flandin, G., Gramfort, A., Henson, R. N., Jas, M., Litvak, V., Moreau, J., Oostenveld, R., Schoffelen, J., Tadel, F., Wexler, J., Baillet, S. (2018). MEG-BIDS, the brain imaging data structure extended to magnetoencephalography. Scientific Data, 5, 180110. https://doi.org/10.1038/sdata.2018.110
-
